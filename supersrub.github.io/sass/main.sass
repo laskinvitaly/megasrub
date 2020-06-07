@@ -1,0 +1,75 @@
+@import vars
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
+@import fonts
+@import libs
+@import component/card
+
+
+
+
+
+
+
+::placeholder
+	color: $accent
+
+::selection
+	background-color: $accent
+	color: $white
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+\:root	
+	font-size: 14px	!important
+	background-color: $white	
+body
+	font-family: 'Roboto', sans-serif
+
+.banner-main
+	width: 100%
+	max-width: 1150px
+	height: 600px
+	margin: 0 auto
+	background-image: url("../img/bg.png")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+	.header-bg
+		height: 100%
+		background-color: rgba($black, .7)
+
+.content
+	display: flex
+	flex-wrap: wrap
+
+aside
+	width: 100%
+
+main
+	width: 100%
+
+.katalog	
+	&-btn
+		width: 80%
+		height: 30px
+		margin: 20px auto
+		text-align: center
+		cursor: pointer
+		background-color: red
+	&-wrap
+		width: 100%
+		height: 300px
+		background-color: orange
+		&:not(.show)
+			display: none
+
+.article
+	display: none
+
+
+
