@@ -1,3 +1,4 @@
+@import vars
 .top-project
 	h2
 		text-align: center
@@ -7,14 +8,35 @@
 		.wrap
 			display: flex
 			flex-wrap: wrap
-			justify-content: center
+			justify-content: space-around
+			padding-left: 20px
+			padding-right: 20px
 			.card
-				width: 80%
+				width: 100%
+				max-width: 200px
 				height: 200px
 				margin-top: 20px
 				text-align: center
 				background-color: green
-
+		a.btn
+			display: block
+			width: 100%
+			max-width: 200px
+			height: 50px
+			margin: 10px auto
+			border: 1px solid $brown
+			box-sizing: border-box
+			border-radius: 10px
+			text-align: center
+			line-height: 50px
+			font-weight: 500
+			font-size: 18px
+			color: $brown
+			text-transform: uppercase
+			text-decoration: none
+			&:hover
+				background-color: $brown
+				color: $white
 .advantages
 	h2
 		text-align: center
